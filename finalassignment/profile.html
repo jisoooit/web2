@@ -1,0 +1,119 @@
+<!doctype html>
+<html> 
+<head>
+    <title>profile</title>
+    <meta charset="UTF-8">
+    <style>
+        body{
+            margin: 0;
+        } 
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        h2{
+            font-size: 30px;
+            text-align: center;
+            padding: 20px;
+        }
+        ul{
+            width: 100px;
+            margin: 0;
+            padding: 10px;
+            padding-left: 30px;
+        }
+        ul li{
+            line-height: 100px;
+            font-size: 20px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        h3{
+            text-align: center;
+            margin: 0;
+            background-color:rgb(68, 125, 172);
+            color: azure;
+            padding: 5px;
+            letter-spacing: 2px;
+        }
+        header{
+            background-color: rgb(158, 196, 228);
+        }
+        nav{
+            background-color: antiquewhite;
+        }
+        #grid{
+            display: grid;
+            grid-template-columns: 140px 1fr;
+        }
+        article{
+            padding-left: 25px;
+            border-left:3px solid sandybrown;
+            text-align: center;
+            margin-right: 20px;
+        }
+        #m{
+            padding-left: 40px;
+            margin:0;
+            width:102px;
+            background-color: sandybrown;
+        }
+        img{
+            float: left;
+            margin-right: 3%;
+        }
+        #pro{
+            float: left;
+        }
+        fieldset{clear: left; margin-bottom: 50px;}
+        #tmi{
+            margin-top: 20px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2><a href="index.html">권지수의 모든 것</a></h2>
+    </header>
+    <h3>Profile</h3>
+    <p id="m">MENU</p>
+    <div id="grid">
+        <nav>
+            <ul>
+                <li><a href="life.html">Life</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="interesting.html">Hobby</a></li>
+                <li><a href="survey.html">Survey</a></li>
+            </ul>
+        </nav>
+        <article>
+            <img src="images/face.PNG" alt="사진" width=350px, height="220px">
+            <div id=pro>
+                <p>이름: 권지수</p>
+                <p>성별: 여</p>
+                <p>생년월일: 2000.09.15(22세)</p>
+                <p>전화번호: 010-950*-595*</p>
+                <p>email: ydsn336@naver.com</p>
+            <br>
+            </div>
+            <fieldset>
+                <legend>TMI</legend>
+                <div id="tmi">
+                    <p>관심분야: 웹, 서버</p>
+                    <p>프로젝트: 아직 완성도있는 프로젝트를 구현해본적이 없다.</p>
+                    <p>현재 공부중인 것: 알고리즘</p>
+                    <p>앞으로 공부하고 싶은 것: 자바 스프링, 노드</p>
+                    <hr>
+                    <p>좋아하는 음식: 떡볶이</p>
+                    <p>현재 좋아하는 노래: peaches</p>
+                    <p>좋아하는 영화: 해리포터</p>
+                    <p>좋아하는 드라마: 브루클린나인나인</p>
+                    <p>좋아하는 동물: 개와 고양이</p>
+                    <p>장점: 시간약속을 잘지킨다, 흥미가 없어도 열심히 한다.</p>
+                    <p>단점: 섬세하지 못하다.</p>
+                </div>
+            </fieldset>
+        </article>
+    </div>
+</body>
+</html>

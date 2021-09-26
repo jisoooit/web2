@@ -1,0 +1,166 @@
+<!doctype html>
+<html> 
+<head>
+    <title>life</title>
+    <meta charset="UTF-8">
+    <style>
+        body{
+            margin: 0;
+        } 
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        h2{
+            font-size: 30px;
+            text-align: center;
+            padding: 20px;
+        }
+        nav{
+            background-color: antiquewhite;
+        }
+        ul{
+            width: 100px;
+            margin: 0;
+            padding: 10px;
+            padding-left: 30px;
+        }
+        ul li{
+            line-height: 100px;
+            font-size: 20px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        h3{
+            text-align: center;
+            margin: 0;
+            background-color:rgb(68, 125, 172);
+            color: azure;
+            padding: 5px;
+            letter-spacing: 2px;
+        }
+        header{
+            background-color: rgb(158, 196, 228);
+        }
+        #grid{
+            display: grid;
+            grid-template-columns: 140px 1fr;
+        }
+        article{
+            padding-left: 25px;
+            border-left:3px solid sandybrown;
+            text-align: center;
+        }
+        #m{
+            padding-left: 40px;
+            margin:0;
+            width:102px;
+            background-color: sandybrown;
+        }
+        .tb{
+            border-collapse: collapse;
+            width: 98%;
+            margin-bottom: 50px;
+        }
+        td{
+            height: 30px;
+        }
+        ol li{
+            list-style: upper-alpha;
+            text-align: left;
+            line-height: 40px;
+            font-size: 20px;
+        }
+        caption{
+            text-align: right;
+            font-size: 20px;
+        }
+        img{
+            float: left;
+            margin-right: 20%;
+            margin-left: 5%;
+        }
+        fieldset{width: 520px; float: left; margin-right: 30px; margin-bottom: 50px;} 
+        legend{font-size: 20px;}
+    </style>
+    <script type="text/javascript">
+
+    </script>
+</head>
+<body>
+    <header>
+        <h2><a href="index.html">권지수의 모든 것</a></h2>
+    </header>
+    <h3>My Life</h3>
+    <p id="m">MENU</p>
+    <div id="grid">
+        <nav>
+            <ul>
+                <li><a href="life.html">Life</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="interesting.html">Hobby</a></li>
+                <li><a href="survey.html">Survey</a></li>
+            </ul>
+        </nav>
+        <article>
+        
+            <table border="1" class="tb">
+                <caption>[학력]</caption>
+                <tr>
+                    <th>나이</th><th>학교</th>
+                </tr>
+                <tr>
+                    <td>8-13살</td><td>대교초등학교, 왕산초등학교, 곡정초등학교 졸업</td>
+                </tr>
+                <tr>
+                    <td>14-16살</td><td>화홍중학교 졸업</td>
+                </tr>
+                <tr>
+                    <td>17-19살</td><td>동산고등학교 졸업</td>
+                </tr>
+                <tr>
+                    <td>20-23살</td><td>숙명여자대학교 재학중</td>
+                </tr>
+            </table>
+            <table border="1" class="tb">
+                <caption>[대학 과정]</caption>
+                <tr>
+                    <th>학년</th><th>교과목명</th>
+                </tr>
+                <tr>
+                    <td>1-1</td><td>소프트웨어의 이해, 소프트웨어진로탐색</td>
+                </tr>
+                <tr>
+                    <td>1-2</td><td>프로그래밍개론, 컴퓨터 수학</td>
+                </tr>
+                <tr>
+                    <td>2-1</td><td>자료구조, 데이터 사이언스 개론</td>
+                </tr>
+                <tr>
+                    <td>2-2</td><td>컴퓨터 시스템 기초, 자바프로그래밍, 컴퓨터그래픽스</td>
+                </tr>
+                <tr>
+                    <td>3-1</td><td>운영체제, 데이터마이닝 및 분석, 웹프로그래밍 기초</td>
+                </tr>
+            </table>
+            <fieldset>
+                <legend>[현재 할 수 있는 것]</legend>
+                <img src="images/pen.PNG" alt="사진" width="150px" height="150px">
+                <ol>
+                    <li>python, c</li>
+                    <li>c++, java</li>
+                    <li>html, css</li>
+                </ol>
+            </fieldset>
+            <fieldset>
+                <legend>[앞으로 공부 하고 싶은 것]</legend>
+                <img src="images/book.PNG" alt="사진" width="150px" height="150px">
+                <ol>
+                    <li>알고리즘</li>
+                    <li>react, node</li>
+                    <li>spring</li>
+                </ol>
+            </fieldset>
+        </article>
+    </div>
+</body>
+</html>
