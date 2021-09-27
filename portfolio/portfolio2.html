@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>portfolio</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/portfolio2.css">
+    </head>
+    <body>
+        <header>
+            <h1>포트폴리오</h1>
+        </header>
+        <main>
+            <nav>
+                <div><a href="#table">테이블 요소</a></div>
+                <div><a href="#form">폼 요소</a></div>
+                <div><a href="#list">리스트 요소</a></div>
+                <span style="display: block; clear: left;">
+            </nav>
+            <article>
+                <div class="lt">구성 요소</div>
+                <hr>
+                <section>
+                    <div class="ti" id="table">테이블 요소</div>
+                    <div class="con">
+                        <div class="ti2">아동 사이즈</div>
+                        <table class="tb1">
+                            <thead>
+                                <tr>
+                                    <th colspan="3">구분</th>
+                                    <th colspan="2">Small</th>
+                                    <th colspan="2">Medium</th>
+                                    <th colspan="2">Large</th>
+                                    <th colspan="2">X-Large</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="3" colspan="2">미국 남아[Boys 2-7]</td>
+                                    <td>사이즈</td>
+                                    <td>2T</td>
+                                    <td>3T</td>
+                                    <td>4T</td>
+                                    <td>4</td>
+                                    <td>5</td>
+                                    <td>6</td>
+                                    <td colspan="2">2T</th>
+                                </tr>
+                                <tr>
+                                    <td>키</td>
+                                    <td>84-91</td>
+                                    <td>91-99</td>
+                                    <td>91-99</td>
+                                    <td>99-107</td>
+                                    <td>107-114</td>
+                                    <td>144-122</td>
+                                    <td colspan="2">122-130</td>
+                                </tr>
+                                <tr>
+                                    <td>몸무게</td>
+                                    <td>13-15</td>
+                                    <td>14-15</td>
+                                    <td>13-15</td>
+                                    <td>14-15</td>
+                                    <td>19-21</td>
+                                    <td>20-23</td>
+                                    <td colspan="2">23-25</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="3" colspan="2">미국 여아[Girls 2-6X]</td>
+                                    <td>사이즈</td>
+                                    <td>2T</td>
+                                    <td>3T</td>
+                                    <td>4T</td>
+                                    <td>4</td>
+                                    <td>5</td>
+                                    <td>6</td>
+                                    <td colspan="2">2T</th>
+                                </tr>
+                                <tr>
+                                    <td>키</td>
+                                    <td>84-91</td>
+                                    <td>91-99</td>
+                                    <td>91-99</td>
+                                    <td>99-107</td>
+                                    <td>107-114</td>
+                                    <td>144-122</td>
+                                    <td colspan="2">122-130</td>
+                                </tr>
+                                <tr>
+                                    <td>몸무게</td>
+                                    <td>13-15</td>
+                                    <td>14-15</td>
+                                    <td>13-15</td>
+                                    <td>14-15</td>
+                                    <td>19-21</td>
+                                    <td>20-23</td>
+                                    <td colspan="2">23-25</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="ti2">환불 가능 금액 조회</div>
+                        <table class="tb2">
+                            <thead>
+                                <tr>
+                                    <td colspan="2">구분</td>
+                                    <td>환불 가능액</td>
+                                    <td>수수료</td>
+                                    <td>총 환불 금액</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="2">게임 보상 금액</td>
+                                    <td>100,000원</td>
+                                    <td>1,000원</td>
+                                    <td>99,000원</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">월정액제 보상금액</td>
+                                    <td>10,000원</td>
+                                    <td>5,000원</td>
+                                    <td>5,000원</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">코인</td>
+                                    <td>9,000원</td>
+                                    <td>500원</td>
+                                    <td>8,500원</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="2">총합계</td>
+                                    <td>119,000원</td>
+                                    <td>6,500원</td>
+                                    <td>112,500원</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </section>
+                <section>
+                    <div class="ti" id="form">폼 요소</div>
+                    <div class="con">
+                        <div class="ti2">회원가입</div>
+                        <form action="", method="get">
+                            <label for="id">아이디</label>
+                            <input type="text" id="id">
+                            <label for="passwd">비밀번호</label>
+                            <input type="password" id="passwd">
+                            <label for="name">이름</label>
+                            <input type="text" id="name">
+                            <div class="cate">생년월일</div>
+                            <select name="year">
+                                <option value="">년</option>
+                                <option value="1995">1995</option>
+                                <option value="1996">1996</option>
+                                <option value="1997">1997</option>
+                                <option value="1998">1998</option>
+                                <option value="1999">1999</option>
+                                <option value="2000">2000</option>
+                            </select>
+                            <select name="month">
+                                <option value="">월</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                            <select name="day">
+                                <option value="">-- 선택 --</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                            </select>
+                            <div class="cate">성별</div>
+                            <input type="radio" name="sex" value="man" id="man">
+                            <label for="man">남자</label>
+                            <input type="radio" name="sex" value="woman" id="woman">
+                            <label for="woman">여자</label>
+                            <label for="email">이메일</label>
+                            <input type="email" id="email">
+                            <label for="num">휴대전화</label>
+                            <input type="text" id="num">
+                            <button type="button">인증번호받기</button>
+                            <input type="text" id="num2">
+                            <div class="cate">취미</div>
+                            <input type="checkbox" name="hob" value="1" id="1">
+                            <label for="1">운동</label>
+                            <input type="checkbox" name="hob" value="2" id="2">
+                            <label for="2">요리</label>
+                            <input type="checkbox" name="hob" value="3" id="3">
+                            <label for="3">여행</label>
+                            <input type="checkbox" name="hob" value="4" id="4">
+                            <label for="4">게임</label>
+                            <input type="checkbox" name="hob" value="5" id="5">
+                            <label for="5">컴퓨터</label>
+                            <input type="checkbox" name="hob" value="6" id="6">
+                            <label for="1">음악</label>
+                            <input type="checkbox" name="hob" value="7" id="7">
+                            <label for="1">독서</label>
+                            <div class="cate">가입인사</div>
+                            <textarea name="hi" rows=10 cols=100></textarea>
+                        </form>
+                    </div>
+                </section>
+                <section>
+                    <div class="ti" id="list">리스트 요소</div>
+                    <div class="con">콘텐츠 영역</div>
+                </section>
+            </article>
+        </main>
+        <footer>
+            <hr>
+            <div class="add">주소 경기도 성남시 분당구, E-MAIL: hongglidong@naver.com</div>
+            <div class="right">Copyright Hong Gil Dong. All Rights Reserved.</div>
+        </footer>
+    </body>
+</html>
