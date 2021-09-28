@@ -189,6 +189,61 @@ select[name="day"]{
     margin-right: 70px;
 }
 /* 리스트 영역 */
+.box{
+    border: 1px solid #e4e4e4;
+    padding: 20px;
+}
+.box2{
+    width: 20%;
+}
+.project{
+    font-size: 32px;
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+    padding: 30px;
+}
+.bold14{
+    font-size: 14px;
+    color: #000;
+    font-weight: bold;
+    margin-right: 5px;
+
+}
+.blue12{
+    font-size: 12px;
+    color: #559bfa;
+}
+p{
+    font-size: 12px;
+    color: #000;
+    margin: 5px 0 15px;
+}
+ol{
+    list-style: none;
+    counter-reset: licount;
+    padding: 0;
+    margin: 0;
+}
+ol li{
+    counter-increment: licount;
+    font-size: 12px;
+    color: #000;
+}
+ol li::before{
+    content:counter(licount);
+    font-size: 10px;
+    color: #666;
+    width: 17px;
+    height: 17px;
+    border: 1px solid #e0e0e0;
+    display: inline-block;
+    text-align: center;
+    margin: 5px 10px 5px 0;
+    line-height: 17px;
+    /* 글자 감싸는 박스와 같은 높이로 line-height지정해주면 글자가 수직 중앙 정렬된다. */
+}
+/*footer*/
 footer{
     text-align: center;
     background-color: white;
