@@ -265,7 +265,7 @@ ul span{
     color: #ec5336;
 }
 /* 뉴스 */
-img{
+.news img{
    float: left; 
    margin-right: 10px;
 }
@@ -288,9 +288,36 @@ img{
     font-weight: bold;
     text-decoration: underline;
 }
-.box p{
+.news p{
     margin-bottom: 0;
 }
+/* 웹툰 */
+.left{
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.left:nth-child(3), .left:nth-child(7){ /*도대체 왜 6이아니고 7인 거노*/
+    margin-right: 0;
+}
+.left div:not(.bold14){
+    margin-top: 3px;
+    font-size: 12px;
+    color: #000;
+}
+.cut, .smart{
+    font-size: 10px;
+    color: #fff;
+}
+.cut{
+    background-color: #80c83d;
+    border: 1px solid #71b036;
+}
+.smart{
+    background-color: #ec5336;
+    border: 1px solid #df4e28;
+}
+
 /*footer*/
 footer{
     text-align: center;
