@@ -317,7 +317,12 @@ ul span{
     background-color: #ec5336;
     border: 1px solid #df4e28;
 }
-
+.left a{
+    text-decoration: none;
+}
+ol li:hover, .left div:hover, .left .bold14:hover{
+    text-decoration: underline;
+}
 /*footer*/
 footer{
     text-align: center;
