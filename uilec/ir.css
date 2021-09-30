@@ -1,0 +1,41 @@
+ol{
+    list-style: none;
+}
+body,ol{
+    margin: 0;
+    padding: 0;
+}
+.wrap{
+    position: relative;
+    width: 1020px;
+    height: 650px;
+    margin: 0 auto;
+    background: url(image/img.png) no-repeat 0 0;
+}
+
+.blind{
+    position: absolute;
+    clip:rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+.link_point{
+    position: absolute;
+    width: 130px;
+    height: 20px;
+    left: 103px;
+    bottom: 108px;
+    
+}
+
+.link_join{
+    position: absolute;
+    width: 340px;
+    height: 67px;
+    left: 340px;
+    bottom: 10px;
+    
+}
