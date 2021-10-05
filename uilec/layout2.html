@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>레이아웃</title>
+        <link rel="stylesheet" href="./reset.css">
+        <style>
+            html,body,.wrap{
+                height: 100%;
+            }
+            .header{
+                height: 100px;
+                background-color: lightgreen;
+            }
+            .container{
+                display: table;
+                width: 800px;
+                margin: -100px auto;
+                min-height: 100%;
+                padding: 100px 0;
+                box-sizing: border-box;
+            }
+            .content{
+                display: table-cell;
+                width: 500px;
+                background-color: lightsalmon;
+                border-right: 5px solid #000;
+            }
+            .aside{
+                display: table-cell;
+                display: 300px;
+                background-color: lightseagreen;
+            }
+            .footer{
+                height: 100px;
+                background-color: cornflowerblue;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="header">header</div>
+            <div class="container">
+                <div class="content">content</div>
+                <div class="aside">aside</div>
+            </div>
+            <div class="footer">footer</div>
+        </div>
+    </body>
+</html>
