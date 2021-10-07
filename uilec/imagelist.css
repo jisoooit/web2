@@ -100,3 +100,77 @@ p {
       border:1px solid rgba(0,0,0,0.3);
       background-color: rgba(0,0,0,0.15);
   }
+  /* 아이콘 상태 변경 */
+.change {
+    float: left;
+    padding: 10px;
+    text-align: center;
+}
+.change:after { /*왜 가로 정렬이 안되지?*/
+    display: block;
+    width: 100px;
+    height: 100px;
+    content: '';
+    border: 1px solid gray;
+    background-color: pink;
+
+}
+.up:after {
+    background: url(https://image.flaticon.com/icons/png/512/187/187142.png) no-repeat;
+    background-size: cover;
+}
+.down:after {
+    background: url(https://image.flaticon.com/icons/png/512/187/187154.png) no-repeat;
+    background-size: cover;
+}
+/* IR(*Image Replacement) 처리 */
+.blind {
+    overflow: hidden;
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+/* 마우스 오버시 버튼 노출 */
+.box{
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+.box +.box{
+    margin-top: 30px;
+}
+.img_link{
+    position: relative;
+    display:inline-block;
+    width: 100px;
+    height: 100px;
+}
+.alert{
+    position: absolute;
+    right: 4px;
+    bottom: 4px;
+    padding: 0 10px;
+    font-size: 12px;
+    line-height: 18px;  
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.del_link{
+    position: absolute;
+    display: none;
+    top:0;
+    right: 0;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.test1 .img_link:hover + .del_link{ /*링크 위에 해서 오류남. 링크 2개가 겹쳐버리니까*/
+    display: block;
+}
+.test2:hover > .del_link{/*그냥 블록위헤 하는게 마음 편한듯*/
+    display: block;
+}
