@@ -187,6 +187,9 @@ h1{
 .sub_list li:nth-child(5n+1) {
     margin-left: 0;
 }
+.sub_list .img_wrap{
+    position: relative;
+}
 .sub_list .item_link{
     display: block;
     position: relative;
@@ -203,6 +206,31 @@ h1{
 .sub_list .item_link img{
     width: 188px;
     height: 141px;
+}
+.sub_list .time{
+    position: absolute; /*img_wrap*/
+    right: 4px;
+    bottom: 4px;
+    height: 18px;
+    padding: 0 7px 0;
+    font-size: 11px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.sub_list .watch_later_link{
+    display: none;
+    position: absolute;
+    right: 4px;
+    bottom: 4px;
+    width: 45px;
+    height: 45px;
+    background: url(./image/later_watch.png) no-repeat 0 0;
+}
+.sub_list .img_wrap:hover .watch_later_link{
+    display: block;
+}
+.sub_list .img_wrap:hover .time{
+    display: none;
 }
 .sub_list .info_wrap{
     margin-top: 10px;
