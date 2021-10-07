@@ -1,0 +1,102 @@
+html,body,ol{
+    margin: 0;
+    padding: 0;
+}
+ol{
+    list-style: none;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+}
+.main_wrap{
+    background-color: silver;
+}
+.main_list{
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.main_list li{
+    float: left;
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    background-color: pink;
+}
+.main_list:after{
+    display: block;
+    content: "";
+    clear: both;
+}
+.main_list li+li{
+    margin-left: 15px;
+}
+.sub_list{
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+.sub_list li{
+    float: left;
+    width: 48px;
+    height: 48px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    line-height: 48px;
+    background-color: olive;
+}
+.sub_list:after{
+    display: block;
+    content: "";
+    clear: both;
+}
+.sub_list li:nth-child(5n){
+    /* 끝에 요소 margin right값은 0으로 해야 안튀어나감 */
+    margin-right: 0; 
+}
+/* 텍스트 말줄임  */
+p {
+    width: 200px;
+    background-color: yellow;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .elip1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .elip2 {
+    max-height: 40px; /* webkit 외 브라우저 대응, line-height*line수 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+  .elip3 {
+    max-height: 60px; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+  }
+  /* 이미지 액자 효과 */
+  .img_wrap{
+      position: relative;
+      width: 200px;
+      height: 134px;
+  }
+  .img_wrap::after{
+      position: absolute; /*after하려면 display나 posiotion지정이 되어야 한다.*/
+      /*이미지랑 완전히 겹치게*/
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      content: "";
+      border:1px solid rgba(0,0,0,0.3);
+      background-color: rgba(0,0,0,0.15);
+  }
