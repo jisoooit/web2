@@ -15,7 +15,14 @@ a{
 img{
     vertical-align: top;
 }
-
+.blind{
+    overflow: hidden;
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
 /* 스타일 선언 */
 h1{
     overflow: hidden; /*넘치는 부분 보여지지 않게 함*/
@@ -75,13 +82,58 @@ h1{
     height: 215px;
 }
 /* 이미지 먼저 넣고 글 넣음 */
-.main_list .info{
+.main_list .info_wrap{
     position: absolute;
     right: 15px;
     bottom: 15px;
     left: 15px;
     color: #fff;
     overflow: hidden;
+}
+.main_list .info{
+   margin-left: 40px;
+}
+.main_list .rank{
+    position: absolute;
+    top: -5px;
+    text-align: center;
+}
+.main_list .rank .num{
+    display: block;
+    font-size: 40px;
+    line-height: 42px;
+}
+.main_list .rank .change{
+    display: block;
+    margin-top: 11px;
+}
+.main_list .rank .change::before{
+    display: inline-block;
+    content: '';
+    margin-right: 3px;
+}
+.rank .up::before{
+    width: 7px;
+    height: 10px;
+    /* background-color: red; */
+    background: url(./image/rank_up.png) no-repeat;
+}
+.rank .down:before{
+    width: 7px;
+    height: 10px;
+    background: url(./image/rank_down.png) no-repeat;
+}
+.rank .keep:before{
+    width: 8px;
+    height: 2px;
+    padding-bottom: 4px;
+    background: url(./image/rank_keep.png) no-repeat;
+}
+.rank .up{
+    color: #f82850;
+}
+.rank .down{
+    color: #1996ff;
 }
 .main_list .category{
     font-size: 14px;
@@ -94,7 +146,23 @@ h1{
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-
+.main_list .like{
+    position: relative;
+    display: block;
+    margin-top: 5px;
+    padding-left: 18px;
+    font-size: 14px;
+    line-height: 20px;
+}
+.main_list .like::before{
+    position: absolute;
+    top: 4px;
+    left: 0;
+    content: '';
+    width: 14px;
+    height: 15px;
+    background: url(./image/like_large.png) no-repeat;
+}
 /* 서브 이미지 리스트 */
 .sub_wrap{
     margin-top: 30px;
@@ -136,12 +204,15 @@ h1{
     width: 188px;
     height: 141px;
 }
-
-.sub_list .info{
-    height: 70px;
+.sub_list .info_wrap{
     margin-top: 10px;
-    padding: 5px;
+    position: relative;
 }
+.sub_list .info{
+    height: 79px;
+    margin-left: 30px;
+}
+
 .sub_list .title{
     display: -webkit-box;
     overflow: hidden;
@@ -158,4 +229,46 @@ h1{
     padding-top: 3px;
     font-size: 12px;
     color: #7ba7df;
+}
+.sub_list .rank{
+    position: absolute;
+    top: 0;
+    bottom: 1px;
+    width: 20px;
+    text-align: center;
+}
+.sub_list .rank .num{
+    display: block;
+    font-size: 22px;
+    line-height: 24px;
+}
+.sub_list .rank .change{
+    position:absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.sub_list .rank .change::before{
+    display: inline-block;
+    content: '';
+    margin-right: 3px;
+}
+.sub_list .like{
+    position: absolute; /*info wrap기준이네*/
+    bottom: 0;
+    /* left: 0; */
+    padding-left: 18px;
+    font-size: 14px;
+    line-height: 20px;
+}
+.sub_list .like::before{
+    position: absolute; /*.like기준이네*/
+    top: 6px;
+    /* top:0; */
+    left: 0;
+    /* right: 0; */
+    content: '';
+    width: 11px;
+    height: 10px;
+    background: url(./image/like.png) no-repeat;
 }
