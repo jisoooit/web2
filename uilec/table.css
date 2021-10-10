@@ -1,0 +1,36 @@
+table,td,th{
+    /* border: 1px solid #000; */
+    border-collapse: collapse;
+}
+
+table{
+    width: 500px;
+    /* 간격 같게 하는 */
+    table-layout: fixed; 
+    font-size: 13px;
+}
+
+.col_age, .col_gen{
+    width: 90px;
+}
+th{
+    font-weight: normal;
+    /* vertical-align: top; */
+}
+th,td{
+    border-bottom: 1px solid #e1e1e1;
+}
+thead th{
+    padding: 5px 0;
+    border-bottom: 2px solid #000;
+}
+tbody td{
+    height: 40px;
+}
+
+.th_view , .th_rate, tbody td{
+    text-align: right;
+}
+.th_male, .th_female{
+    background: #f8f8f8;
+}
