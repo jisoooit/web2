@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko"> 
+<head>
+    <meta charset="utf-8">
+    <title>체크박스, 라디오버튼의 커스텀</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        h1{
+            margin: 10px 0;
+        }
+        .blind{
+            position: absolute;
+            overflow: hidden;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            /* clip: rect(0 0 0 0); */
+            opacity: 0;
+        } 
+        /* 1 */
+        .check input[type='checkbox']+label{
+            display: inline-block;
+            overflow: hidden;
+            position: relative;
+            width: 36px;
+            height: 21px;
+            border-radius: 10px;
+            background: #666;
+            vertical-align: top;
+            color: transparent;
+        }
+        .check input[type='checkbox']+label::before{
+            content: '';
+            position: absolute;
+            top:1px;
+            left:1px;
+            width: 19px;
+            height: 19px;
+            border-radius: 50%; 
+            /* 원 만들기 */
+            background: #fff;
+        }
+        .check input[type='checkbox']:checked+label{
+            background-color: #62a7ee;
+        }
+        .check input[type='checkbox']:checked+label::before{
+            left: auto; 
+            /* left초기화 */
+            right: 1px;
+        }
+        /* 2 */
+        .check_form label{
+            display: inline-block;
+            font-size: 16px;
+        }
+        .check_form label:before{
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin: 1px 5px 0 0;
+            background: url(./image/checkbox.png) no-repeat 0 0;
+            background-size: 20px;
+            vertical-align: top;
+            content: '';
+        }
+        .check_form input:checked + label:before {
+            background-image: url(./image/checkbox_on.png); /* checked 이미지 적용 */
+        }
+        /* 3 */
+        .radio_form label{
+            display: inline-block;
+            font-size: 16px;
+        }
+        .radio_form label::before{
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin: -1px 5px 0 0;
+            background: url(./image/radio.png) no-repeat 0 0;
+            background-size: 20px;
+            vertical-align: top;
+            content: '';
+        }
+        .radio_form input:checked +label::before{
+            background-image: url(./image/radio_on.png);
+        }
+    </style>
+</head>
+<body>
+    <h1>css만을 이용한 checkbox 커스텀</h1>
+    <div class="check">
+        <input class="blind" type="checkbox" id="check_btn1" name="" value="">
+        <label for="check_btn1">선택1</label>
+    </div>
+    <div class="check"> 
+        <input class="blind" type="checkbox" id="check_btn2" name="">
+        <label for="check_btn2">선택2</label>
+    </div>
+    <h1>이미지를 이용한 checkbox 커스텀</h1>
+    <div class="check_form">
+        <input class="blind" type="checkbox" id="check_btn3" name="" value="">
+        <label for="check_btn3">선택1</label>
+    </div>
+    <div class="check_form"> 
+        <input class="blind" type="checkbox" id="check_btn4" name="">
+        <label for="check_btn4">선택2</label>
+    </div>
+    <h1>이미지를 이용한 라디오버튼 커스텀</h1>
+    <div class="radio_form">
+        <input class="blind" type="radio" id="radio_btn1" name="rad">
+        <label for="radio_btn1">라디오1</label>
+    </div>
+    <div class="radio_form">
+        <input class="blind" type="radio" id="radio_btn2" name="rad">
+        <label for="radio_btn2">라디오2</label>
+    </div>
+    <div class="radio_form">
+        <input class="blind" type="radio" id="radio_btn3" name="rad">
+        <label for="radio_btn3">라디오3</label>
+    </div>
+</body>
+</html>
