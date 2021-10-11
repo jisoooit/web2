@@ -1,0 +1,183 @@
+/* 이 가이드에서는 헤더를 벗어나는 레이어와 같은 부가적인 내용이 없기 때문에 
+overflow: hidden을 넣어도 문제가 되지 않지만 레이아웃요소에서 float을 해제할 때는 :after와 같은 가상요소로 해제를 하는 경우가 더 일반적입니다. */
+a{
+    text-decoration: none;
+    color: inherit;
+}
+header{
+    background-color: pink;
+    padding: 20px;
+    overflow: hidden; /*float해제 위해서*/
+}
+.logo{
+    float: left;
+    font-size: 20px;
+    color: #fff;
+}
+nav{
+    float: right;
+}
+nav a{
+    padding: 0 5px;
+    font-size: 20px;
+    color: #fff;
+}
+.gnb_menu{
+    display: none;
+}
+footer{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #ccc;
+    font-size: 14px;
+    color: #000;
+}
+section{
+    overflow: hidden; /*900넘을때 아래위로 스크롤이 생기는거 막아줌*/
+    max-width: 900px;
+    margin: 20px auto;
+}
+.list{
+    overflow: hidden; /*li float해제위해서*/
+    margin: -5px; /*사방에 여백 생긴거 싹 집어넣기 위해서*/ 
+}
+.list li{
+    float: left;
+    width: 20%;
+}
+.inner{
+    display: block;
+    margin: 5px; /*여백 5씩 줌으로써 합치면 10되게*/
+    border: 1px solid #000;
+}
+.thumb img{
+    width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+.title{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding: 5px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+
+}
+/* 스크린 환경이면서 최대가로길이가 768px을 넘지 않거나, 스크린 환경이면서 최대 높이가 768px을 넘기지 않고 비율이 가로가 더 긴경우에 해당 코드를 적용하시오. */
+@media screen and(max-width: 768px),screen and (max-height: 768px) and (orientation: landscape) {
+    header{
+        background-color: lightseagreen;
+    }
+    .logo{
+        width: 100px;
+        float: none;
+        display: block;
+        margin: 0 auto;
+        font-size: 40px;
+        text-align: center;
+    }
+    nav{
+        float: none;
+        overflow-x: auto; /*x방향으로 스크롤 되게*/
+        overflow-y: hidden; /*y방향으로 스크롤 막음*/
+        margin-top: 20px;
+        white-space: nowrap;/*개행되지 않게 함*/
+    }
+    nav a{
+        font-size: 25px;
+    }
+    footer{
+        background-color: lightcoral;
+        color: #fff;
+    }
+    .list{
+        margin: -4px;
+    }
+    .list li{
+        width: 25%;
+    }
+    .inner{
+        position: relative;
+        margin: 4px;
+    }
+    .title{
+        position:absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        padding: 10px 0;
+        background-color: rgba(0,0,0,0.2);
+        color: #fff;
+    }
+}
+@media screen and (max-width: 375px), screen and (max-height: 375px) and (orientation: landscape) {
+    header{
+        padding: 10px 0;
+    }
+    nav{
+        /* display: none; */
+        position: absolute;
+        top: 60px;
+        left: 0;
+        /* bottom: 0; */
+        z-index: 10;
+        width: 200px;
+        margin: 0;
+        background-color: lightslategray;
+    }
+    nav a{
+        display: block; 
+        /* 한줄씩 차지하도록 */
+        padding: 20px 10px;
+        font-size: 20px;
+        border-bottom: 1px solid #fff;
+    }
+    .gnb_menu{
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        display: block;
+        width: 40px;
+        height: 35px;
+        font-size: 1px;
+        color: transparent;
+        background: linear-gradient(#fff 50%,transparent 50%);
+        background-size: 100% 10px; /*wid 100%, hei 10px씩 반복*/
+    }
+    section{
+        margin: 0;
+    }
+    .list li{
+        width: 100%;
+    }
+    .inner{
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+        margin: 0;
+        border-top: 1px solid #000;
+    }
+    .thumb{
+        display: table-cell;
+        width: 100px;
+    }
+    .title{
+        display: table-cell;
+        /*초기화시킴*/
+        position: relative;
+        right: auto;
+        left: auto;
+        bottom: auto;
+        vertical-align: middle;
+        background-color: #fff;
+        padding: 8px;
+        color: #000;
+        /*말줄임 없앰*/
+        text-overflow: inherit;
+        white-space: inherit;
+        text-align: left;
+    }
+}
