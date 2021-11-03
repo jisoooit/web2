@@ -26,15 +26,17 @@ a{
 .menu{
     display: table;
     width: 100%;
+    /*각 너비를 균등하게 하기위해*/
     table-layout: fixed;
 }
 .menu_item{
     display: table-cell;
 }
 .menu_link{
+    /*a를 li에 꽉차게 하기 위해서 */
     display: block;
     height: 36px;
-    border: 1px solid #ddd;
+    border: 3px solid #ddd;
     font-size: 12px;
     line-height: 36px;
     color: #333;
@@ -42,13 +44,16 @@ a{
 }
 .menu_item + .menu_item .menu_link{
     margin-left: -1px;
+    /*이러면 뒤에 있는 구조가 위로 올라오게 된다. 
+    그래서 밑에서 rel을 한거임*/
 }
 .menu_item:hover .menu_link{
     color: green;
     font-weight: bold;
 }
 .menu_item.active .menu_link{
-    position: relative; /*앞으로 나오게 하려고..*/
+    position: relative; 
+    /*앞으로 나오게 하려고..*/
     border-color: #555;
     font-weight: bold;
     color: #fff;

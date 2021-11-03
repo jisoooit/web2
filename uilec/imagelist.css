@@ -174,3 +174,4 @@ p {
 .test2:hover > .del_link{/*그냥 블록위헤 하는게 마음 편한듯*/
     display: block;
 }
+/*>는 자식 ' '는 자손*/

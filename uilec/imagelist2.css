@@ -159,6 +159,7 @@ h1{
     top: 4px;
     left: 0;
     content: '';
+
     width: 14px;
     height: 15px;
     background: url(./image/like_large.png) no-repeat;
@@ -285,7 +286,7 @@ h1{
     position: absolute; /*info wrap기준이네*/
     bottom: 0;
     /* left: 0; */
-    padding-left: 18px;
+    padding-left: 18px; /*before가 들어갈자리를 패딩으로*/
     font-size: 14px;
     line-height: 20px;
 }

@@ -13,16 +13,21 @@
                 background-color: lightgreen;
             }
             .container{
+                /* 테이블 셀을 이용한 정렬 */
                 display: table;
                 width: 800px;
+                padding: 100px 0;
                 margin: -100px auto;
                 min-height: 100%;
-                padding: 100px 0;
                 box-sizing: border-box;
+                /*padding 200값을 100%안에 넣는 느낌..*/
             }
             .content{
                 display: table-cell;
+                /*width: 495px; width는 border포함하지 않고 패딩까지인듯*/
+                /*width에 border값을 뺀 값을 줘도 되고 box-sizing을 이용해도 된다.*/
                 width: 500px;
+                box-sizing: border-box;
                 background-color: lightsalmon;
                 border-right: 5px solid #000;
             }

@@ -19,7 +19,8 @@
     position: relative; /*z-index적용하려면 relative여야한다.*/
     width: 300px;
     min-height: 150px; /*150으로 하고 pb 50줘서 버튼 자리 확보하고 텍스트 버튼 위에까지만 보이게 함*/
-    padding-bottom: 50px;
+    padding-bottom: 50px; 
+	/*버튼 자리*/
     background: #fff;
     z-index: 10; /*맨 앞에 오게 하려고*/
 }

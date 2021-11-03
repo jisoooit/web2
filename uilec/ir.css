@@ -22,7 +22,7 @@ body,ol{
     overflow: hidden;
 }
 
-.link_point{
+.link_point{ /*a에 클래스를 줘서 사진에서의 링크 위치에 링크가 작동되도록*/
     position: absolute;
     width: 130px;
     height: 20px;

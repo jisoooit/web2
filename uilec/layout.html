@@ -13,13 +13,14 @@
                 background-color: lightgreen;
             }
             .container{
-                position: relative;
+                position: relative; /*기준점이 컨테이너가 되야하니까*/
                 width: 800px;
                 margin: 0 auto;
                 min-height: 100%;
                 padding: 100px 0;
                 margin: -100px auto;
-                box-sizing: border-box; /*padding값이 높이 값에 영향 주지 않게 하기 위해서 */
+                box-sizing: border-box; 
+                /* padding값이 높이 값에 영향 주지 않게 하기 위해서 */
             }
             .container:after{ /*after이용해서 float해제*/
                 display: block;

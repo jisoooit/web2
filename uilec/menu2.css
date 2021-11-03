@@ -44,7 +44,8 @@ a {
 }
 .submenu{
     display: none;
-    position: absolute; /*이거 해줘야 한다. 그래야 배치가 잘..*/
+    position: absolute; 
+    /*ㄴ이거 해줘야 한다. 그래야 배치가 잘..*/
     left: 0;
     width: 100%;
     min-width: 700px;

@@ -40,7 +40,8 @@ section{
 }
 .list{
     overflow: hidden; /*li float해제위해서*/
-    margin: -5px; /*사방에 여백 생긴거 싹 집어넣기 위해서*/ 
+    margin: -5px; 
+    /*사방에 여백 생긴거 싹 집어넣기 위해서*/ 
 }
 .list li{
     float: left;
@@ -60,6 +61,7 @@ section{
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+
     padding: 5px 0;
     text-align: center;
     font-size: 14px;
@@ -67,7 +69,7 @@ section{
 
 }
 /* 스크린 환경이면서 최대가로길이가 768px을 넘지 않거나, 스크린 환경이면서 최대 높이가 768px을 넘기지 않고 비율이 가로가 더 긴경우에 해당 코드를 적용하시오. */
-@media screen and(max-width: 768px),screen and (max-height: 768px) and (orientation: landscape) {
+@media screen and (max-width: 768px), screen and (max-height: 768px) and (orientation: landscape) {
     header{
         background-color: lightseagreen;
     }
