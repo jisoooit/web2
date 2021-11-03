@@ -163,7 +163,7 @@ align-items: center;
     bottom: 0;
     right: 0;
     height: 50px;
-    
+    overflow: hidden;
 }
 .btn{
     /* 버튼은 inline-block으로 여백이 포함되서 버튼 사이에 엔터가
