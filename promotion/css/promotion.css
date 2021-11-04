@@ -9,6 +9,14 @@ body{
     margin: -1px;
     overflow: hidden;
 }
+.top{
+    position: fixed;
+    z-index: 5;
+    width: 100px;
+    height: 100px;
+    right: 0;
+    bottom: 180px;
+}
 header{
    position: fixed;
    top: 0;
@@ -186,6 +194,25 @@ header{
     background-size: cover;
     background: url(../image/section_recipe.png) repeat-x 0 0;
 }
+.reci_list{
+    position: relative;
+    width: 980px;
+    height: 681px;
+}
+.link_reci1{
+    position: absolute;
+    width: 481px;
+    height: 482px;
+    left: 1px;
+    bottom: 0px;
+}
+.link_reci2{
+    position: absolute;
+    width: 481px;
+    height: 482px;
+    right: -2px;
+    bottom: 0px;
+}
 .link_full{
    position: absolute;
    bottom: 70px;
@@ -300,9 +327,12 @@ but를 밖에 빼고 인접선택자 사용함 */
 
 footer{
     width:1920px;
-    height: 44px;
+    height: 80px;
     text-align: center;
     background-color: #e0e4eb;
     font-size: 18px;
     color: #70757d;
+}
+footer div{
+    line-height: 80px;
 }
